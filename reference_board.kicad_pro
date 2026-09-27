@@ -813,7 +813,7 @@
         "uuid": "afb8e687-4a13-41a1-b8c0-89a749e897fe"
       }
     ],
-    "used_designators": "#SYM2,TP1-8,J2,#LOGO2",
+    "used_designators": "LOGO3,#SYM2,TP1-8,J2,#LOGO2",
     "variants": []
   },
   "sheets": [

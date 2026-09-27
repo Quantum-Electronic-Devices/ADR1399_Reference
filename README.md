@@ -3,7 +3,7 @@
 ![License: CERN-OHL-W-2.0](https://img.shields.io/github/license/Quantum-Electronic-Devices/ADR1399_Reference?color=blue)
 # ADR1399 Sub-ppm Reference Voltage
 
-This repository contains the KiCAD PCB project files for a sub-ppm temperature coefficient __negative voltage reference__ used in the [DgDrive laser current driver](https://qed.gmbh/en/products/electronics/dgdrive/).
+This repository contains the KiCAD PCB project files for a sub-ppm temperature coefficient __negative voltage reference__ used in the [DgDrive](https://qed.gmbh/en/products/electronics/dgdrive/) laser current driver.
 
 ![ADR1399 reference board](images/board.png)
 

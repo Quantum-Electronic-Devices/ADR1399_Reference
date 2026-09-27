@@ -5821,7 +5821,7 @@
 	)
 	(symbol
 		(lib_id "Custom_logos:Logo_QED")
-		(at 264.16 171.45 0)
+		(at 276.86 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -5832,7 +5832,7 @@
 		(fields_autoplaced yes)
 		(uuid "da8697ad-8eed-4165-9817-150e362740c9")
 		(property "Reference" "#SYM3"
-			(at 270.51 164.465 0)
+			(at 283.21 154.305 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5843,7 +5843,7 @@
 			)
 		)
 		(property "Value" "Logo_QED"
-			(at 270.51 177.8 0)
+			(at 283.21 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5854,7 +5854,7 @@
 			)
 		)
 		(property "Footprint" "custom_footprints_project:QED-logo_small"
-			(at 257.81 171.45 0)
+			(at 270.51 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5865,7 +5865,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 171.45 0)
+			(at 276.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5876,7 +5876,7 @@
 			)
 		)
 		(property "Description" "Copyright Quantum Electronic Devices"
-			(at 270.764 172.974 0)
+			(at 283.464 162.814 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5887,7 +5887,7 @@
 			)
 		)
 		(property "MFN" ""
-			(at 264.16 171.45 0)
+			(at 276.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5898,7 +5898,7 @@
 			)
 		)
 		(property "PN" ""
-			(at 264.16 171.45 0)
+			(at 276.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5909,7 +5909,7 @@
 			)
 		)
 		(property "RoHS" ""
-			(at 264.16 171.45 0)
+			(at 276.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5920,7 +5920,7 @@
 			)
 		)
 		(property "Temperature" ""
-			(at 264.16 171.45 0)
+			(at 276.86 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

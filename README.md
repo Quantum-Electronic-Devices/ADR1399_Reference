@@ -1,9 +1,9 @@
-[![GitHub release](https://img.shields.io/github/release/TU-Darmstadt-APQ/Voltage_reference.svg)](https://github.com/TU-Darmstadt-APQ/Voltage_reference/releases/latest)
-[![Build manufacturing files](https://github.com/TU-Darmstadt-APQ/Voltage_reference/actions/workflows/ci.yml/badge.svg)](https://github.com/TU-Darmstadt-APQ/Voltage_reference/actions/workflows/ci.yml)
-![License: CERN-OHL-W-2.0](https://img.shields.io/github/license/TU-Darmstadt-APQ/Voltage_reference?color=blue)
+[![GitHub release](https://img.shields.io/github/release/Quantum-Electronic-Devices/ADR1399_Reference.svg)](https://github.com/Quantum-Electronic-Devices/ADR1399_Reference/releases/latest)
+[![Build manufacturing files](https://github.com/Quantum-Electronic-Devices/ADR1399_Reference/actions/workflows/ci.yml/badge.svg)](https://github.com/Quantum-Electronic-Devices/ADR1399_Reference/actions/workflows/ci.yml)
+![License: CERN-OHL-W-2.0](https://img.shields.io/github/license/Quantum-Electronic-Devices/ADR1399_Reference?color=blue)
 # ADR1399 Sub-ppm Reference Voltage
 
-This repository contains the KiCAD PCB project files for a sub-ppm temperature coefficient __negative voltage reference__ used in the [digital laser driver design](https://github.com/TU-Darmstadt-APQ/DgDrive).
+This repository contains the KiCAD PCB project files for a sub-ppm temperature coefficient __negative voltage reference__ used in the [DgDrive laser current driver](https://qed.gmbh/en/products/electronics/dgdrive/).
 
 ![ADR1399 reference board](images/board.png)
 
@@ -49,7 +49,7 @@ The PCBA variant should be used when sending the boards to the PCB manufacturer 
 ### For editing
 To work on the [KiCad](https://www.kicad.org/) design files, a number of external libraries are needed. Those libraries show up as empty folders in the zip file, because they are not included in the release, but must be downloaded separately from the links given [below](#related-repositories). This can be avoided by checking out the whole repository using git. This way the libraries will be downloaded as well. Use the following command to clone the git repository along with the submodules  using the `--recurse-submodules` flag.
 ```
-git clone --recurse-submodules https://github.com/TU-Darmstadt-APQ/Voltage_reference
+git clone --recurse-submodules https://github.com/Quantum-Electronic-Devices/ADR1399_Reference
 ```
 
 ## Related Repositories

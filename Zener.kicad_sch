@@ -4901,7 +4901,7 @@
 				)
 			)
 		)
-		(property "PN" "BAS116H\\,115 "
+		(property "PN" "BAS116H\\,115"
 			(at 203.2 97.79 0)
 			(hide yes)
 			(show_name no)

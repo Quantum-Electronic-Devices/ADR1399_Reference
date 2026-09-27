@@ -214,24 +214,24 @@ jobs:
 
       - name: Append BOM (bill of materials) as asset
         run: |
-          mv "./${{ inputs.name }}-manufacturing_files/bom_(${{ matrix.variant }}).zip" "${{ inputs.name }}_bom_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"
-          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_bom_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"#"Bill of materials for the ${{ matrix.variant }} variant (zip)" --repo ${{ github.repository }}
+          mv "./${{ inputs.name }}-manufacturing_files/bom_(${{ matrix.variant }}).zip" "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_bom_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"
+          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_bom_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"#"${{ inputs.name }}: Bill of materials for the ${{ matrix.variant }} variant (zip)" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
       - name: Append schematics as asset
         run: |
-          mv "./${{ inputs.name }}-manufacturing_files/$(basename ${{ inputs.schematic }} .kicad_sch)_schematics_${{ needs.tests.outputs.revision }}_(${{ matrix.variant }}).pdf" "${{ inputs.name }}_schematics_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.pdf"
-          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_schematics_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.pdf"#"Schematics for the ${{ matrix.variant }} variant (pdf)" --repo ${{ github.repository }}
+          mv "./${{ inputs.name }}-manufacturing_files/$(basename ${{ inputs.schematic }} .kicad_sch)_schematics_${{ needs.tests.outputs.revision }}_(${{ matrix.variant }}).pdf" "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_schematics_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.pdf"
+          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_schematics_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.pdf"#"${{ inputs.name }}: Schematics for the ${{ matrix.variant }} variant (pdf)" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
       - name: Append position files as asset
         run: |
-          mv "./${{ inputs.name }}-manufacturing_files/pos_(${{ matrix.variant }}).zip" "${{ inputs.name }}_position_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"
-          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_position_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"#"Pick & Place position files for the ${{ matrix.variant }} variant (zip)" --repo ${{ github.repository }}
+          mv "./${{ inputs.name }}-manufacturing_files/pos_(${{ matrix.variant }}).zip" "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_position_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"
+          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_position_${{ needs.tests.outputs.revision }}_${{ matrix.variant }}.zip"#"${{ inputs.name }}: Pick & Place position files for the ${{ matrix.variant }} variant (zip)" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -239,8 +239,8 @@ jobs:
       - name: Append Gerber files as asset
         if: matrix.variant == 'default'
         run: |
-          mv "./${{ inputs.name }}-manufacturing_files/gerbers_(${{ matrix.variant }}).zip" "${{ inputs.name }}_gerber_${{ needs.tests.outputs.revision }}_all.zip"
-          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_gerber_${{ needs.tests.outputs.revision }}_all.zip"#"Gerber files for all variants (zip)" --repo ${{ github.repository }}
+          mv "./${{ inputs.name }}-manufacturing_files/gerbers_(${{ matrix.variant }}).zip" "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_gerber_${{ needs.tests.outputs.revision }}_all.zip"
+          gh release upload ${{ github.event.release.tag_name }} "${{ inputs.name }}_${{ needs.tests.outputs.basename }}_gerber_${{ needs.tests.outputs.revision }}_all.zip"#"${{ inputs.name }}: Gerber files for all variants (zip)" --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash

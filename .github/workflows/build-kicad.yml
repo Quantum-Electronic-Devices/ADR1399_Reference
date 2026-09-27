@@ -173,6 +173,7 @@ jobs:
         with:
           name: ${{ inputs.name }}-manufacturing_files-bom-${{ matrix.variant }}
           path: bom_files_compressed
+          if-no-files-found: error
           retention-days: 7
 
       - name: Upload schematic files as artifact
@@ -180,6 +181,8 @@ jobs:
         with:
           name: ${{ inputs.name }}-manufacturing_files-schematics-${{ matrix.variant }}
           path: schematics
+          archive: false
+          if-no-files-found: error
           retention-days: 7
 
       - name: Upload Gerber files as artifact
@@ -187,6 +190,7 @@ jobs:
         with:
           name: ${{ inputs.name }}-manufacturing_files-gerber-${{ matrix.variant }}
           path: gerber_files_compressed
+          if-no-files-found: error
           retention-days: 7
 
   release:

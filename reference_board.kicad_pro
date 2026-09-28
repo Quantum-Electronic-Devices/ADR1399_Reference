@@ -77,7 +77,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "via_dangling|123500000|53000000|d0360522-cde2-43ee-9691-94565f4c126a|00000000-0000-0000-0000-000000000000",
+          "Via is used as mechanical rest for probe tips"
+        ],
+        [
+          "via_dangling|123500000|55500000|c01efc95-c1fe-4900-af0e-77ffe286714f|00000000-0000-0000-0000-000000000000",
+          "Via is used as mechanical rest for probe tips"
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2

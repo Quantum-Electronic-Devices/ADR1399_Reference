@@ -22,12 +22,20 @@ _autosave-*
 fp-info-cache
 footprints_project_specific.3dshapes
 
+# Netlist files (exported from Eeschema)
+*.net
+
 # KiCAD 6 Files #
-*-backups
-*.kicad_prl
+**/*-backups/*.zip
 
 # KiCAD 7 Files #
 \#auto_saved_files#
+
+# Local git-based history (KiCad 9.0+)
+.history
+
+# Local project settings
+*.kicad_prl
 
 # Automatically generated files #
 #################################
@@ -35,7 +43,6 @@ gerber/*
 *.gbr
 *.gbrjob
 *.drl
-*.net
 /*.stp
 /*.step
 /*.csv

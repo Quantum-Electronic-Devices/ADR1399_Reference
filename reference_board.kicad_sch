@@ -4813,8 +4813,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Counter_Clockwise")
-		(at 130.81 90.17 0)
-		(mirror y)
+		(at 128.27 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4844,7 +4843,7 @@
 			)
 		)
 		(property "Footprint" "Custom_footprints_project:Molex_SlimStack_53307-1071_2x05_P0.80mm_Vertical"
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4855,7 +4854,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4866,7 +4865,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4877,7 +4876,7 @@
 			)
 		)
 		(property "MFN" "Molex"
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4888,7 +4887,7 @@
 			)
 		)
 		(property "PN" "53307-1071"
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4899,7 +4898,7 @@
 			)
 		)
 		(property "RoHS" "Yes"
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4910,7 +4909,7 @@
 			)
 		)
 		(property "Temperature" "Tstorage = -40 °C to 105 °C"
-			(at 130.81 90.17 0)
+			(at 128.27 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
